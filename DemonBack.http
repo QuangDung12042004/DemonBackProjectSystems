@@ -1,0 +1,6 @@
+@DemonBack_HostAddress = http://localhost:5246
+
+GET {{DemonBack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
