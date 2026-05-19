@@ -1,0 +1,22 @@
+# Node
+node_modules
+dist
+.vite
+
+# .NET
+bin
+obj
+
+# Python
+.venv
+__pycache__
+*.pyc
+
+# Environment
+.env
+.env.local
+appsettings.Development.json
+
+# IDE
+.vscode
+.idea
