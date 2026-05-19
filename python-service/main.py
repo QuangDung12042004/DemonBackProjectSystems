@@ -1,8 +1,18 @@
+# pyrefly: ignore [missing-import]
 from fastapi import FastAPI
+# pyrefly: ignore [missing-import]
 from pydantic import BaseModel
 
 app = FastAPI(title="AnimeFit Pro Python Service")
 
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # Allow all origins for local dev
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class PlanRequest(BaseModel):
     goal: str
