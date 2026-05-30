@@ -1,8 +1,15 @@
+using DemonBackProjectSystems.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using Npgsql.EntityFrameworkCore.PostgreSQL; // Add this using directive
+
 var builder = WebApplication.CreateBuilder(args);
 
 // 1. Đăng ký các dịch vụ của Swagger vào Container
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
 
 // Đăng ký HttpClient và CORS
 builder.Services.AddHttpClient();
@@ -18,20 +25,16 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// 2. Cấu hình HTTP Request Pipeline
 if (app.Environment.IsDevelopment())
 {
-    // Kích hoạt Swagger middleware để sinh file JSON (swagger.json)
     app.UseSwagger();
     
-    // Kích hoạt giao diện đồ họa Swagger UI tại đường dẫn /swagger
     app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
-app.UseCors("AllowAll"); // Bật CORS cho Frontend gọi
+app.UseCors("AllowAll"); 
 
-// 3. Khai báo các API Endpoints
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -51,14 +54,12 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-// 1. API Health Check
 app.MapGet("/api/health", () =>
 {
     return Results.Ok(new { service = "AnimeFitPro API", status = "running" });
 })
 .WithName("HealthCheck");
 
-// 2. API Forward to Python Service
 app.MapPost("/api/workout/generate", async (System.Text.Json.JsonElement body, IHttpClientFactory httpClientFactory) =>
 {
     var client = httpClientFactory.CreateClient();
@@ -76,7 +77,6 @@ app.MapPost("/api/workout/generate", async (System.Text.Json.JsonElement body, I
 
 app.Run();
 
-// 4. Định nghĩa Data Model (Record)
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
