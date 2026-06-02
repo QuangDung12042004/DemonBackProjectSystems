@@ -1,78 +1,59 @@
-# pyrefly: ignore [missing-import]
-from fastapi import FastAPI
-# pyrefly: ignore [missing-import]
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, Field
+from typing import List
 
-app = FastAPI(title="AnimeFit Pro Python Service")
+app = FastAPI(title="AnimeFit AI Service")
 
-from fastapi.middleware.cors import CORSMiddleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"], # Allow all origins for local dev
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# ==========================================
+# 1. INPUT VALIDATION (Không cho invalid request lọt vào AI)
+# ==========================================
+class WorkoutRequest(BaseModel):
+    goal: str = Field(..., min_length=2, description="Ví dụ: Tăng cơ, giảm mỡ")
+    level: str = Field(..., description="Trình độ: Beginner, Intermediate, Advanced")
+    days_per_week: int = Field(..., ge=1, le=7, description="Số ngày tập phải từ 1 đến 7")
+    anime_style: str = Field(..., min_length=2, description="Ví dụ: Baki, Toji, Goku")
 
-class PlanRequest(BaseModel):
-    goal: str
-    level: str
-    days_per_week: int
-    anime_style: str
+# ==========================================
+# 2. STRUCTURED AI OUTPUT (Chuẩn hóa đầu ra)
+# ==========================================
+class WorkoutDay(BaseModel):
+    day: str
+    focus: str
+    exercises: List[str]
 
+class WorkoutResponse(BaseModel):
+    plan_name: str
+    days: List[WorkoutDay]
 
-@app.get("/")
-def root():
-    return {
-        "service": "AnimeFit Pro Python Service",
-        "status": "running"
-    }
+# ==========================================
+# 3. ENDPOINT XỬ LÝ
+# ==========================================
+@app.post("/api/generate", response_model=WorkoutResponse)
+async def generate_workout_plan(req: WorkoutRequest):
+    # Tự động chặn nếu level nhập sai
+    valid_levels = ["Beginner", "Intermediate", "Advanced"]
+    if req.level not in valid_levels:
+        raise HTTPException(status_code=400, detail="Level chỉ được là Beginner, Intermediate hoặc Advanced")
 
+    print(f"🚀 Bắt đầu gọi AI tạo giáo án {req.anime_style} trong {req.days_per_week} ngày...")
 
-@app.post("/generate-plan")
-def generate_plan(request: PlanRequest):
-    return {
-        "plan_name": f"{request.anime_style} {request.goal} {request.days_per_week}-Day Plan",
-        "goal": request.goal,
-        "level": request.level,
-        "days_per_week": request.days_per_week,
-        "anime_style": request.anime_style,
+    # TODO: Khúc này sau này em sẽ móc code gọi OpenAI / Gemini / Prompt thật vào đây
+    # Hiện tại mình trả về Mock Data chuẩn xác theo đúng cấu trúc để C# và React đọc được
+    
+    mock_response = {
+        "plan_name": f"Giáo án độ body {req.anime_style} - Level {req.level}",
         "days": [
             {
-                "day": "Monday",
-                "focus": "Push",
-                "exercises": [
-                    {
-                        "name": "Bench Press",
-                        "sets": 4,
-                        "reps": "6-8",
-                        "rest_seconds": 120
-                    },
-                    {
-                        "name": "Shoulder Press",
-                        "sets": 3,
-                        "reps": "8-10",
-                        "rest_seconds": 90
-                    }
-                ]
+                "day": "Thứ 2",
+                "focus": "Ngực - Tay sau (Sức mạnh tàn bạo)",
+                "exercises": ["Incline Bench Press 4x8", "Dumbbell Flyes 3x12", "Tricep Pushdown 3x15"]
             },
             {
-                "day": "Tuesday",
-                "focus": "Pull",
-                "exercises": [
-                    {
-                        "name": "Pull Up",
-                        "sets": 4,
-                        "reps": "6-10",
-                        "rest_seconds": 120
-                    },
-                    {
-                        "name": "Barbell Row",
-                        "sets": 3,
-                        "reps": "8-10",
-                        "rest_seconds": 90
-                    }
-                ]
+                "day": "Thứ 4",
+                "focus": "Lưng xô - Tay trước (Lưng quỷ Demon Back)",
+                "exercises": ["Deadlift 4x5", "Pull-ups 4xMax", "Barbell Curls 3x10"]
             }
         ]
     }
+    
+    return mock_response

@@ -1,91 +1,56 @@
-import { useState, useEffect } from 'react'
-import './App.css'
+import React from 'react';
+import Navbar from './layouts/Navbar';
+import Sidebar from './layouts/Sidebar';
+import WorkoutCard from './components/WorkoutCard';
+import useLocalStorage from './hooks/useLocalStorage';
 
 function App() {
-  const [healthStatus, setHealthStatus] = useState<string>('Checking...')
-  const [workoutPlan, setWorkoutPlan] = useState<any>(null)
-  const [loading, setLoading] = useState(false)
+  // 1. Dùng custom hook để lưu Theme (Mặc định là 'dark')
+  const [theme, setTheme] = useLocalStorage<'light' | 'dark'>('app-theme', 'dark');
 
-  // Cổng Backend .NET của bạn đang là 5079
-  const BACKEND_URL = 'http://localhost:5079'
+  // 2. Dùng custom hook để lưu Sở thích (Mặc định là phong cách Baki)
+  const [targetStyle, setTargetStyle] = useLocalStorage<string>('user-target-style', 'Baki Hanma');
 
-  useEffect(() => {
-    // 1. Gọi API Health Check
-    fetch(`${BACKEND_URL}/api/health`)
-      .then(res => res.json())
-      .then(data => {
-        setHealthStatus(`${data.service} is ${data.status}`)
-      })
-      .catch(err => {
-        console.error(err)
-        setHealthStatus('Failed to connect to Backend')
-      })
-  }, [])
-
-  const handleGeneratePlan = async () => {
-    setLoading(true)
-    try {
-      // 2. Gọi API Generate Workout
-      const response = await fetch(`${BACKEND_URL}/api/workout/generate`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          goal: "Build Muscle",
-          level: "Beginner",
-          days_per_week: 3,
-          anime_style: "Goku"
-        })
-      })
-
-      if (!response.ok) throw new Error('API Error')
-
-      const data = await response.json()
-      setWorkoutPlan(data)
-    } catch (err) {
-      console.error(err)
-      alert('Lỗi khi gọi API. Kiểm tra console F12.')
-    } finally {
-      setLoading(false)
-    }
-  }
+  // Đổi màu nền và chữ tùy theo Theme
+  const isDark = theme === 'dark';
+  const bgColor = isDark ? '#121212' : '#f4f4f4';
+  const textColor = isDark ? '#ffffff' : '#333333';
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '600px', margin: '0 auto' }}>
-      <h1 style={{ color: '#fff' }}>AnimeFit Pro - API Tester</h1>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', margin: 0, fontFamily: 'sans-serif' }}>
+      <Navbar />
 
-      <div style={{ marginBottom: '20px', padding: '15px', backgroundColor: '#333', borderRadius: '8px' }}>
-        <h3 style={{ margin: 0, color: '#fff' }}>
-          Backend Status: <span style={{ color: healthStatus.includes('running') ? '#4ade80' : '#f87171' }}>{healthStatus}</span>
-        </h3>
+      <div style={{ display: 'flex', flex: 1 }}>
+        <Sidebar />
+
+        <main style={{ flex: 1, padding: '20px', background: bgColor, color: textColor, transition: 'all 0.3s ease' }}>
+
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h2>Hệ thống huấn luyện Anime Body!</h2>
+
+            {/* Nút bấm chuyển đổi Theme */}
+            <button
+              onClick={() => setTheme(isDark ? 'light' : 'dark')}
+              style={{ padding: '8px 16px', cursor: 'pointer', borderRadius: '5px', background: isDark ? '#ffffff' : '#121212', color: isDark ? '#000000' : '#ffffff' }}
+            >
+              Chuyển sang {isDark ? 'Chế độ Sáng ☀️' : 'Chế độ Tối 🌙'}
+            </button>
+          </div>
+
+          <div style={{ marginTop: '20px' }}>
+            <p>Mục tiêu hiện tại của bạn: <strong>{targetStyle}</strong></p>
+            <button onClick={() => setTargetStyle('Toji Fushiguro')} style={{ marginRight: '10px' }}>Đổi mục tiêu thành Toji</button>
+            <button onClick={() => setTargetStyle('Goku')}>Đổi mục tiêu thành Goku</button>
+          </div>
+
+          <div style={{ display: 'flex', gap: '20px', marginTop: '30px' }}>
+            <WorkoutCard planName="Giáo án Sức mạnh" animeStyle={targetStyle} days={5} />
+          </div>
+
+        </main>
       </div>
-
-      <button
-        onClick={handleGeneratePlan}
-        disabled={loading}
-        style={{
-          padding: '12px 24px',
-          fontSize: '16px',
-          cursor: loading ? 'not-allowed' : 'pointer',
-          backgroundColor: '#646cff',
-          color: 'white',
-          border: 'none',
-          borderRadius: '8px',
-          fontWeight: 'bold'
-        }}
-      >
-        {loading ? 'Đang tạo kế hoạch...' : 'Generate Workout Plan'}
-      </button>
-
-      {workoutPlan && (
-        <div style={{ marginTop: '20px', padding: '20px', backgroundColor: '#1a1a1a', borderRadius: '8px', textAlign: 'left' }}>
-          <h3 style={{ marginTop: 0, color: '#fff' }}>Generated Workout Plan:</h3>
-          <pre style={{ whiteSpace: 'pre-wrap', color: '#4ade80', fontSize: '14px', margin: 0 }}>
-            {JSON.stringify(workoutPlan, null, 2)}
-          </pre>
-        </div>
-      )}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

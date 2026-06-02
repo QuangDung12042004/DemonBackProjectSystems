@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend-api:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      # Link DB Supabase sẽ được bơm vào đây khi lên Cloud
+
+  python-ai:
+    build:
+      context: ./PythonAI
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"

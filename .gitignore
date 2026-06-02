@@ -20,3 +20,4 @@ appsettings.Development.json
 # IDE
 .vscode
 .idea
+.vs

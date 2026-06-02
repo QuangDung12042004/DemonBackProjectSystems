@@ -1,18 +1,20 @@
+using DemonBackProjectSystems.Api.Middlewares;
 using DemonBackProjectSystems.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Npgsql.EntityFrameworkCore.PostgreSQL; // Add this using directive
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Đăng ký các dịch vụ của Swagger vào Container
+// 1. Đăng ký các dịch vụ vào Container (Dependency Injection)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHttpClient();
+
+// Cấu hình kết nối Database PostgreSQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
-// Đăng ký HttpClient và CORS
-builder.Services.AddHttpClient();
+// Cấu hình CORS cho phép gọi API từ bên ngoài
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -23,61 +25,51 @@ builder.Services.AddCors(options =>
     });
 });
 
+// Nếu bạn chuyển sang dùng Controller thay vì Minimal API, hãy mở comment dòng dưới:
+// builder.Services.AddControllers();
+
 var app = builder.Build();
+
+// 2. Cấu hình HTTP Request Pipeline (Middleware)
+//app.UseMiddleware<ExceptionMiddleware>();
+//app.UseMiddleware<RequestLoggingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    
     app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
-app.UseCors("AllowAll"); 
+app.UseCors("AllowAll");
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+// Nếu dùng Controller, hãy mở comment dòng dưới để map các Route từ Controller:
+// app.MapControllers();
 
-app.MapGet("/weatherforecast", () =>
+// --- HEALTH CHECK ENDPOINT (Task 3) ---
+app.MapGet("/api/system/health", async (ApplicationDbContext db) =>
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    // Bắt mạch xem C# có chạm được vào PostgreSQL không
+    bool isDbConnected = await db.Database.CanConnectAsync();
 
-app.MapGet("/api/health", () =>
-{
-    return Results.Ok(new { service = "AnimeFitPro API", status = "running" });
-})
-.WithName("HealthCheck");
-
-app.MapPost("/api/workout/generate", async (System.Text.Json.JsonElement body, IHttpClientFactory httpClientFactory) =>
-{
-    var client = httpClientFactory.CreateClient();
-    // Gọi sang Python chạy ở port 8001
-    var response = await client.PostAsJsonAsync("http://localhost:8001/generate-plan", body);
-    
-    if (response.IsSuccessStatusCode)
+    // Format chuẩn xác theo JSON em yêu cầu
+    var healthStatus = new
     {
-        var content = await response.Content.ReadFromJsonAsync<object>();
-        return Results.Ok(content);
+        api = "running",
+        database = isDbConnected ? "connected" : "disconnected",
+        python_service = "pending"
+    };
+
+    if (!isDbConnected)
+    {
+        return Results.StatusCode(503);
     }
-    return Results.StatusCode((int)response.StatusCode);
+
+    return Results.Ok(healthStatus);
 })
-.WithName("GenerateWorkout");
+.WithName("GetSystemHealth")
+.WithTags("System");
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+

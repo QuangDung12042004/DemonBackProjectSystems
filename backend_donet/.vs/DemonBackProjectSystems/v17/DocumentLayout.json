@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\middlewares\\requestloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\middlewares\\requestloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\demonbackprojectsystems.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\demonbackprojectsystems.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\demonbackprojectsystems.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\demonbackprojectsystems.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -11,28 +39,8 @@
       "RelativeMoniker": "D:0:0:{9511C186-D3E4-4E72-B467-6A7725671669}|DemonBackProjectSystems.Domain\\DemonBackProjectSystems.Domain.csproj|solutionrelative:demonbackprojectsystems.domain\\demonbackprojectsystems.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\demonbackprojectsystems.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\demonbackprojectsystems.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Infrastructure\\Migrations\\20260530163151_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DemonBackProjectSystems.Infrastructure\\Migrations\\20260530163151_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.api\\demonbackprojectsystems.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4A7F0E03-1C42-469C-B890-B783E2A94839}|DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj|solutionrelative:demonbackprojectsystems.api\\demonbackprojectsystems.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84412D63-E0FA-41BA-8BD3-978679FF5783}|DemonBackProjectSystems.Infrastructure\\DemonBackProjectSystems.Infrastructure.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,6 +89,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{9511C186-D3E4-4E72-B467-6A7725671669}|DemonBackProjectSystems.Domain\\DemonBackProjectSystems.Domain.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.domain\\entities\\achievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9511C186-D3E4-4E72-B467-6A7725671669}|DemonBackProjectSystems.Domain\\DemonBackProjectSystems.Domain.csproj|solutionrelative:demonbackprojectsystems.domain\\entities\\achievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84412D63-E0FA-41BA-8BD3-978679FF5783}|DemonBackProjectSystems.Infrastructure\\DemonBackProjectSystems.Infrastructure.csproj|c:\\users\\msi\\desktop\\animefitpro\\backend_donet\\demonbackprojectsystems.infrastructure\\migrations\\20260530163151_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84412D63-E0FA-41BA-8BD3-978679FF5783}|DemonBackProjectSystems.Infrastructure\\DemonBackProjectSystems.Infrastructure.csproj|solutionrelative:demonbackprojectsystems.infrastructure\\migrations\\20260530163151_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,11 +102,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1689259256:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "DemonBackProjectSystems.Api",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj",
+              "RelativeDocumentMoniker": "DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj",
+              "RelativeToolTip": "DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-02T11:55:44.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestLoggingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\Middlewares\\RequestLoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "DemonBackProjectSystems.Api\\Middlewares\\RequestLoggingMiddleware.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\Middlewares\\RequestLoggingMiddleware.cs",
+              "RelativeToolTip": "DemonBackProjectSystems.Api\\Middlewares\\RequestLoggingMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T11:47:25.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "DemonBackProjectSystems.Api\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "DemonBackProjectSystems.Api\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwB4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T11:33:03.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Api\\appsettings.Development.json",
@@ -107,20 +169,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Api\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\Properties\\launchSettings.json",
               "RelativeToolTip": "DemonBackProjectSystems.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-05-30T16:38:28.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "20260530163151_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Infrastructure\\Migrations\\20260530163151_InitialCreate.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Infrastructure\\Migrations\\20260530163151_InitialCreate.cs",
@@ -128,13 +190,12 @@
               "RelativeToolTip": "DemonBackProjectSystems.Infrastructure\\Migrations\\20260530163151_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T16:31:51.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T16:31:51.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DemonBackProjectSystems.Api",
+              "DocumentIndex": 5,
+              "Title": "DemonBackProjectSystems.Api.csproj",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj",
               "ToolTip": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.csproj",
@@ -145,29 +206,21 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1689259256:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\Program.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Api\\Program.cs",
               "ToolTip": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\Program.cs",
               "RelativeToolTip": "DemonBackProjectSystems.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-30T15:17:54.445Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "DemonBackProjectSystems.Api.http",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.http",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.http",
@@ -175,12 +228,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Api\\DemonBackProjectSystems.Api.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-05-30T15:00:09.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T15:00:09.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Api\\appsettings.json",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Api\\appsettings.json",
@@ -192,12 +244,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Infrastructure\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Infrastructure\\Data\\ApplicationDbContext.cs",
@@ -205,12 +253,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Infrastructure\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAowBIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T15:15:27.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T15:15:27.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "UserAchievement.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\UserAchievement.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\UserAchievement.cs",
@@ -218,12 +265,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\UserAchievement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T15:12:17.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T15:12:17.067Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Achievement.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\Achievement.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\Achievement.cs",
@@ -231,12 +277,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\Achievement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T15:11:59.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T15:11:59.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "ProgressLog.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\ProgressLog.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\ProgressLog.cs",
@@ -244,12 +289,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\ProgressLog.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAA1wDkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T15:11:41.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T15:11:41.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "WorkoutLogExercise.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\WorkoutLogExercise.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\WorkoutLogExercise.cs",
@@ -257,12 +301,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\WorkoutLogExercise.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAYwCIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T15:11:15.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T15:11:15.324Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "WorkoutLog.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\WorkoutLog.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\WorkoutLog.cs",
@@ -270,12 +313,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\WorkoutLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T15:10:50.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T15:10:50.441Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "WorkoutExercise.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\WorkoutExercise.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\WorkoutExercise.cs",
@@ -283,12 +325,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\WorkoutExercise.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAkwCMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T15:05:04.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T15:05:04.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "WorkoutDay.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\WorkoutDay.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\WorkoutDay.cs",
@@ -296,12 +337,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\WorkoutDay.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T15:04:48.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T15:04:48.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "WorkoutPlan.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\WorkoutPlan.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\WorkoutPlan.cs",
@@ -309,12 +349,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\WorkoutPlan.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAowCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T15:04:23.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T15:04:23.506Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Exercise.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\Exercise.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\Exercise.cs",
@@ -322,12 +361,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\Exercise.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:57:44.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T14:57:44.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "DemonBackProjectSystems.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\DemonBackProjectSystems.Domain.csproj",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\DemonBackProjectSystems.Domain.csproj",
@@ -340,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "UserProfile.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\UserProfile.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\UserProfile.cs",
@@ -348,12 +386,11 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\UserProfile.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAA9wDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:51:23.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T14:51:23.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\AnimeFitPro\\backend_donet\\DemonBackProjectSystems.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "DemonBackProjectSystems.Domain\\Entities\\User.cs",
@@ -361,8 +398,7 @@
               "RelativeToolTip": "DemonBackProjectSystems.Domain\\Entities\\User.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAowBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:40:31.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T14:40:31.135Z"
             }
           ]
         }
