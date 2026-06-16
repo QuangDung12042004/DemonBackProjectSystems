@@ -3,15 +3,21 @@ import Navbar from './layouts/Navbar';
 import Sidebar from './layouts/Sidebar';
 import WorkoutCard from './components/WorkoutCard';
 import useLocalStorage from './hooks/useLocalStorage';
+import Login from './pages/Login'; // Móc file Login vào đây
 
 function App() {
-  // 1. Dùng custom hook để lưu Theme (Mặc định là 'dark')
-  const [theme, setTheme] = useLocalStorage<'light' | 'dark'>('app-theme', 'dark');
+  // 1. Dùng Hook lưu trạng thái Đăng nhập. Mặc định là false (Chưa đăng nhập)
+  const [isLoggedIn, setIsLoggedIn] = useLocalStorage<boolean>('auth-status', false);
 
-  // 2. Dùng custom hook để lưu Sở thích (Mặc định là phong cách Baki)
+  const [theme, setTheme] = useLocalStorage<'light' | 'dark'>('app-theme', 'dark');
   const [targetStyle, setTargetStyle] = useLocalStorage<string>('user-target-style', 'Baki Hanma');
 
-  // Đổi màu nền và chữ tùy theo Theme
+  // 2. LOGIC CỔNG AN NINH: Nếu chưa đăng nhập, BẮT BUỘC hiển thị trang Login
+  if (!isLoggedIn) {
+    return <Login onLoginSuccess={() => setIsLoggedIn(true)} />;
+  }
+
+  // 3. Nếu đã đăng nhập thành công, thả cửa cho vào Dashboard
   const isDark = theme === 'dark';
   const bgColor = isDark ? '#121212' : '#f4f4f4';
   const textColor = isDark ? '#ffffff' : '#333333';
@@ -21,32 +27,29 @@ function App() {
       <Navbar />
 
       <div style={{ display: 'flex', flex: 1 }}>
+        {/* Trên Mobile, cái Sidebar này sau này mình sẽ giấu đi thành menu Hamburger, tạm thời cứ để đó */}
         <Sidebar />
 
         <main style={{ flex: 1, padding: '20px', background: bgColor, color: textColor, transition: 'all 0.3s ease' }}>
-
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h2>Hệ thống huấn luyện Anime Body!</h2>
+            <h2>Dashboard Huấn Luyện</h2>
 
-            {/* Nút bấm chuyển đổi Theme */}
+            {/* Nút Đăng xuất (Đổi State về false là tự động văng ra màn hình Login) */}
             <button
-              onClick={() => setTheme(isDark ? 'light' : 'dark')}
-              style={{ padding: '8px 16px', cursor: 'pointer', borderRadius: '5px', background: isDark ? '#ffffff' : '#121212', color: isDark ? '#000000' : '#ffffff' }}
+              onClick={() => setIsLoggedIn(false)}
+              style={{ padding: '8px 16px', cursor: 'pointer', borderRadius: '5px', background: '#e50914', color: '#fff', border: 'none' }}
             >
-              Chuyển sang {isDark ? 'Chế độ Sáng ☀️' : 'Chế độ Tối 🌙'}
+              Đăng xuất
             </button>
           </div>
 
           <div style={{ marginTop: '20px' }}>
             <p>Mục tiêu hiện tại của bạn: <strong>{targetStyle}</strong></p>
-            <button onClick={() => setTargetStyle('Toji Fushiguro')} style={{ marginRight: '10px' }}>Đổi mục tiêu thành Toji</button>
-            <button onClick={() => setTargetStyle('Goku')}>Đổi mục tiêu thành Goku</button>
           </div>
 
           <div style={{ display: 'flex', gap: '20px', marginTop: '30px' }}>
             <WorkoutCard planName="Giáo án Sức mạnh" animeStyle={targetStyle} days={5} />
           </div>
-
         </main>
       </div>
     </div>
